@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let R = +prompt("tien_Dien_1000_VND_cho_100_so_dien")
+    if (R<=100){
+        alert("tien_Dien :" +R*1000);
+    }else if (R<=150){
+        alert("tien_Dien :" + (100*1000+2000*(R-100)) );
+    }else if (R<=200){
+        alert("tien_Dien :" + (100*1000+2000*50+2500*(R-100)) );
+    }else if (R>200){
+        alert("tien_Dien :" + (100*1000+2000*50+2500*50+3000*(R-100)) );
+    }
+</script>
+
+</body>
+</html>
