@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = +prompt("Nhap canh a")
+    let B = +prompt("Nhap canh b")
+    let C = +prompt("Nhap canh c")
+    if (A + B > C || A + C > B || B + C > A) {
+        alert("khong phai canh cua Tam Giac");
+    } else if (A == B && B == C & A == C) {
+        alert("Tam giac deu ");
+    } else if (A == B || B == C || A == C) {
+        alert("Tam giac can");
+    } else if (A * A + B * B == C * C || A * C + C * C == B * B || B * B + C * C == A * C) {
+        alert("Tam giac vuong");
+    } else {
+        alert("Tam giac thuong");
+    }
+
+</script>
+
+</body>
+</html>

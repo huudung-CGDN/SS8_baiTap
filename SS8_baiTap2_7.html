@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = +prompt("a")
+    let B = +prompt("b")
+    let C = +prompt("c")
+    let delta = B * B - 4 * A * C
+    document.write("delta =" + delta)
+    if (delta < 0) {
+        alert("PT_Vo_nghiem");
+    } else if (delta == 0) {
+        alert("PT_Co_nghiem :" + (-B / 2 * A));
+    } else if (delta > 0) {
+        alert("PT_Co_Nghiem X1 :" + (-B + Math.sqrt(delta)) / (2 * A));
+        alert("PT_Co_Nghiem X2 :" + (-B - Math.sqrt(delta)) / (2 * A));
+    }
+
+</script>
+
+</body>
+</html>
